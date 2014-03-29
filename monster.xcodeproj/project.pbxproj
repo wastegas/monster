@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EA3906DB18E770670039A097 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA3906DA18E770670039A097 /* main.cpp */; };
 		EA3906DD18E770670039A097 /* monster.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA3906DC18E770670039A097 /* monster.1 */; };
+		EA3906E518E770880039A097 /* character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA3906E318E770880039A097 /* character.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		EA3906D718E770660039A097 /* monster */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = monster; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3906DA18E770670039A097 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		EA3906DC18E770670039A097 /* monster.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = monster.1; sourceTree = "<group>"; };
+		EA3906E318E770880039A097 /* character.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = character.cpp; sourceTree = "<group>"; };
+		EA3906E418E770880039A097 /* character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = character.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 			children = (
 				EA3906DA18E770670039A097 /* main.cpp */,
 				EA3906DC18E770670039A097 /* monster.1 */,
+				EA3906E318E770880039A097 /* character.cpp */,
+				EA3906E418E770880039A097 /* character.h */,
 			);
 			path = monster;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA3906DB18E770670039A097 /* main.cpp in Sources */,
+				EA3906E518E770880039A097 /* character.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
