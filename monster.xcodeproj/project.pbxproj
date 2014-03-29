@@ -10,6 +10,7 @@
 		EA3906DB18E770670039A097 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA3906DA18E770670039A097 /* main.cpp */; };
 		EA3906DD18E770670039A097 /* monster.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA3906DC18E770670039A097 /* monster.1 */; };
 		EA3906E518E770880039A097 /* character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA3906E318E770880039A097 /* character.cpp */; };
+		EA3906E818E78DF20039A097 /* monster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA3906E618E78DF20039A097 /* monster.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		EA3906DC18E770670039A097 /* monster.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = monster.1; sourceTree = "<group>"; };
 		EA3906E318E770880039A097 /* character.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = character.cpp; sourceTree = "<group>"; };
 		EA3906E418E770880039A097 /* character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = character.h; sourceTree = "<group>"; };
+		EA3906E618E78DF20039A097 /* monster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = monster.cpp; sourceTree = "<group>"; };
+		EA3906E718E78DF20039A097 /* monster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = monster.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				EA3906DC18E770670039A097 /* monster.1 */,
 				EA3906E318E770880039A097 /* character.cpp */,
 				EA3906E418E770880039A097 /* character.h */,
+				EA3906E618E78DF20039A097 /* monster.cpp */,
+				EA3906E718E78DF20039A097 /* monster.h */,
 			);
 			path = monster;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			files = (
 				EA3906DB18E770670039A097 /* main.cpp in Sources */,
 				EA3906E518E770880039A097 /* character.cpp in Sources */,
+				EA3906E818E78DF20039A097 /* monster.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

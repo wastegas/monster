@@ -20,7 +20,9 @@ private:
 public:
     Character(std::string n)
     : characterName(n) { characterLife = 0; }
-    void changeLifeValue(int);
+    virtual void changeLifeValue(int);
+    virtual void attack();
+    virtual void defend();
 };
 
 #endif /* defined(__monster__character__) */
