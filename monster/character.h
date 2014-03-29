@@ -10,5 +10,17 @@
 #define __monster__character__
 
 #include <iostream>
+#include <string>
+
+class Character
+{
+private:
+    std::string characterName;
+    int characterLife;
+public:
+    Character(std::string n)
+    : characterName(n) { characterLife = 0; }
+    void changeLifeValue(int);
+};
 
 #endif /* defined(__monster__character__) */
