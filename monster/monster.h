@@ -9,6 +9,12 @@
 #ifndef __monster__monster__
 #define __monster__monster__
 
-#include <iostream>
+#include "character.h"
+
+class Monster : Character
+{
+private:
+public:
+};
 
 #endif /* defined(__monster__monster__) */
