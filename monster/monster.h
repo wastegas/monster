@@ -14,7 +14,11 @@
 class Monster : public Character
 {
 private:
+    
 public:
+    Monster(const std::string n, int l) : Character(n, l) {}
+    void attack();
+    void defend();
 };
 
 #endif /* defined(__monster__monster__) */

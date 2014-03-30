@@ -7,3 +7,13 @@
 //
 
 #include "monster.h"
+
+void Monster::attack()
+{
+    std::cout << "Monster attacking" << std::endl;
+}
+
+void Monster::defend()
+{
+    std::cout << "Monster defending" << std::endl;
+}

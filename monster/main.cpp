@@ -6,13 +6,17 @@
 //  Copyright (c) 2014 Ronnie Baron. All rights reserved.
 //
 
-#include <iostream>
+#include <memory>
+#include "monster.h"
 
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    std::unique_ptr<Character> m(new Monster("godzilla", 100));
+    
+    m->attack();
+    m->defend();
+    
     return 0;
 }
 
