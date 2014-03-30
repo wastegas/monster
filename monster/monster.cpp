@@ -10,10 +10,10 @@
 
 void Monster::attack()
 {
-    std::cout << "Monster attacking" << std::endl;
+    std::cout << getCharacterName() << " attacking" << std::endl;
 }
 
 void Monster::defend()
 {
-    std::cout << "Monster defending" << std::endl;
+    std::cout << getCharacterName() << " defending" << std::endl;
 }

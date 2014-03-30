@@ -8,14 +8,19 @@
 
 #include <memory>
 #include "monster.h"
+#include "hero.h"
 
 int main(int argc, const char * argv[])
 {
 
     std::unique_ptr<Character> m(new Monster("godzilla", 100));
+    std::unique_ptr<Character> h(new Hero("superman", 100));
     
     m->attack();
     m->defend();
+    
+    h->attack();
+    h->defend();
     
     return 0;
 }

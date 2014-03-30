@@ -8,12 +8,12 @@
 
 #include "hero.h"
 
-void Hero::attac()
+void Hero::attack()
 {
-    std::cout << "Hero attacking" << std::endl;
+    std::cout << getCharacterName() << " attacking" << std::endl;
 }
 
 void Hero::defend()
 {
-    std::cout << "Hero defending" << std::endl;
+    std::cout << getCharacterName() << " defending" << std::endl;
 }
