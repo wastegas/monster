@@ -7,3 +7,13 @@
 //
 
 #include "hero.h"
+
+void Hero::attac()
+{
+    std::cout << "Hero attacking" << std::endl;
+}
+
+void Hero::defend()
+{
+    std::cout << "Hero defending" << std::endl;
+}
