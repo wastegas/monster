@@ -35,6 +35,5 @@ std::string Hero::getWeapon(Weapons currentWeapon)
             break;
         case Weapons::CLUB:
             return "Club";
-
     }
 }
