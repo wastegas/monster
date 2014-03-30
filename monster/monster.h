@@ -16,7 +16,7 @@ class Monster : public Character
 private:
     
 public:
-    Monster(const std::string n, int l) : Character(n, l) {}
+    Monster(const std::string n) : Character(n) {}
     void attack();
     void defend();
 };

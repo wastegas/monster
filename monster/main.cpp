@@ -13,8 +13,8 @@
 int main(int argc, const char * argv[])
 {
 
-    std::unique_ptr<Character> m(new Monster("godzilla", 100));
-    std::unique_ptr<Character> h(new Hero("superman", 100));
+    std::unique_ptr<Character> m(new Monster("godzilla"));
+    std::unique_ptr<Character> h(new Hero("superman"));
     
     m->attack();
     m->defend();

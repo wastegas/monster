@@ -15,7 +15,7 @@ class Hero : public Character
 {
 private:
 public:
-    Hero(const std::string n, int l) : Character(n, l) {}
+    Hero(const std::string n) : Character(n) {}
     void attack();
     void defend();
 };
