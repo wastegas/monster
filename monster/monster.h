@@ -16,9 +16,16 @@ class Monster : public Character
 private:
     
 public:
+    enum Weapons
+    {
+        STOMP,
+        SWIPE,
+        FIRE
+    };
     Monster(const std::string n) : Character(n) {}
     void attack(Character&);
     void defend();
+    std::string getWeapon(Weapons);
 };
 
 #endif /* defined(__monster__monster__) */
