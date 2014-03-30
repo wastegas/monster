@@ -10,10 +10,10 @@
 
 void Hero::attack()
 {
-    std::cout << getCharacterName() << " attacking" << std::endl;
+    std::cout << getCharacterName() << ":" << getCharacterLife() << " attacking" << std::endl;
 }
 
 void Hero::defend()
 {
-    std::cout << getCharacterName() << " defending" << std::endl;
+    std::cout << getCharacterName() << ":" << getCharacterLife() << " defending" << std::endl;
 }
