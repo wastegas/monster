@@ -7,3 +7,13 @@
 //
 
 #include "character.h"
+
+std::string Character::getCharacterName()
+{
+    return characterName;
+}
+
+int Character::getCharacterLife()
+{
+    return characterLife;
+}

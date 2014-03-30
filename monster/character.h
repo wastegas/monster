@@ -18,8 +18,10 @@ private:
     std::string characterName;
     int characterLife;
 public:
-    Character(std::string n, int l = 0)
+    Character(const std::string &n, int l = 0)
     : characterName(n), characterLife(l) {}
+    std::string getCharacterName();
+    int getCharacterLife();
     virtual void changeLifeValue(int);
     virtual void attack();
     virtual void defend();
