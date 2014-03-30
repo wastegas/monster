@@ -17,3 +17,8 @@ int Character::getCharacterLife()
 {
     return characterLife;
 }
+
+void Character::changeLifeValue(int hit)
+{
+    characterLife -= hit;
+}

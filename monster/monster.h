@@ -17,7 +17,7 @@ private:
     
 public:
     Monster(const std::string n) : Character(n) {}
-    void attack();
+    void attack(Character&);
     void defend();
 };
 

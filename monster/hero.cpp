@@ -8,8 +8,9 @@
 
 #include "hero.h"
 
-void Hero::attack()
+void Hero::attack(Character& monster)
 {
+    monster.changeLifeValue(3);
     std::cout << getCharacterName() << ":" << getCharacterLife() << " attacking" << std::endl;
 }
 

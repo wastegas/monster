@@ -8,7 +8,7 @@
 
 #include "monster.h"
 
-void Monster::attack()
+void Monster::attack(Character& hero)
 {
     std::cout << getCharacterName() << ":" << getCharacterLife() << " attacking" << std::endl;
 }

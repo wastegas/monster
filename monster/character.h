@@ -22,8 +22,8 @@ public:
     : characterName(n) { characterLife = 100;}
     std::string getCharacterName();
     int getCharacterLife();
-    virtual void changeLifeValue(int) {}
-    virtual void attack() {}
+    void changeLifeValue(int);
+    virtual void attack(Character&) {}
     virtual void defend() {}
 };
 

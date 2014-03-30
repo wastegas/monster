@@ -16,11 +16,11 @@ int main(int argc, const char * argv[])
     std::unique_ptr<Character> m(new Monster("godzilla"));
     std::unique_ptr<Character> h(new Hero("superman"));
     
-    m->attack();
-    m->defend();
-    
-    h->attack();
+    m->attack(*h);
     h->defend();
+    
+    h->attack(*m);
+    m->defend();
     
     return 0;
 }
