@@ -21,4 +21,6 @@ int Character::getCharacterLife()
 void Character::changeLifeValue(int hit)
 {
     characterLife -= hit;
+    if (characterLife > 100)    // fully healed
+        characterLife = 100;
 }
