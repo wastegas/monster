@@ -18,14 +18,24 @@ int main(int argc, const char * argv[])
     
     while (m->getCharacterLife() > 1 || h->getCharacterLife() > 1) {
         m->attack(*h);
+        if (h->getCharacterLife() < 1)
+            break;
         h->defend(*m);
-        
+        if (m->getCharacterLife() < 1 || h->getCharacterLife() < 1)
+            break;
         h->attack(*m);
+        if (m->getCharacterLife() < 1)
+            break;
         m->defend(*h);
         if (m->getCharacterLife() < 1 || h->getCharacterLife() < 1)
             break;
     }
     
+    if (m->getCharacterLife() < 1)
+        std::cout << m->getCharacterName() << ":" << m->getCharacterLife() << " lost the match" << std::endl;
+    else
+        std::cout << h->getCharacterName() << ":" << h->getCharacterLife() << " lost the match" << std::endl;
+
     
     return 0;
 }
