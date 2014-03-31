@@ -42,7 +42,7 @@ std::string Hero::getWeapon(Weapons currentWeapon)
             return " attacking with a Spear";
             break;
         case Weapons::CLUB:
-            return " attacking Club";
+            return " attacking with a Club";
     }
 }
 
