@@ -17,10 +17,10 @@ int main(int argc, const char * argv[])
     std::unique_ptr<Character> h(new Hero("superman"));
     
     m->attack(*h);
-    h->defend();
+    h->defend(*m);
     
     h->attack(*m);
-    m->defend();
+    m->defend(*h);
     
     return 0;
 }
