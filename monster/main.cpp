@@ -12,11 +12,12 @@
 
 int main(int argc, const char * argv[])
 {
-
+    int rounds = 0;
     std::unique_ptr<Character> m(new Monster("godzilla"));
     std::unique_ptr<Character> h(new Hero("superman"));
     
     while (m->getCharacterLife() > 1 || h->getCharacterLife() > 1) {
+        rounds++;
         m->attack(*h);
         if (h->getCharacterLife() < 1)
             break;
@@ -36,7 +37,7 @@ int main(int argc, const char * argv[])
     else
         std::cout << h->getCharacterName() << ":" << h->getCharacterLife() << " lost the match" << std::endl;
 
-    
+    std::cout << rounds << " rounds played" << std::endl;
     return 0;
 }
 
