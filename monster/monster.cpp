@@ -33,7 +33,7 @@ std::string Monster::getWeapon(Weapons currentWeapon)
 {
     switch (currentWeapon) {
         case Weapons::MISSED:
-            return " missed";
+            return " missed on this attack";
             break;
         case Weapons::STOMP:
             return " attacking with a Stomp";

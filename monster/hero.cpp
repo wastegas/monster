@@ -33,7 +33,7 @@ std::string Hero::getWeapon(Weapons currentWeapon)
 {
     switch (currentWeapon) {
         case Weapons::MISSED:
-            return " missed";
+            return " missed on this attack";
             break;
         case Weapons::SWORD:
             return " attacking with a Sword";
