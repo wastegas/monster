@@ -55,10 +55,10 @@ std::string Monster::getDefense(Defenses currentDefense, Character& hero)
         case Defenses::BLOCK:
             return " was able to block and heal";
         case Defenses::SHIELD:
-            return "was able to use shield and heal";
+            return " was able to use shield and heal";
             break;
         case Defenses::HITBACK:
-            return "was able to hit back";
+            return " was able to hit back";
             hero.changeLifeValue(currentDefense);
             break;
     }
