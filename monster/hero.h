@@ -17,14 +17,16 @@ private:
 public:
     enum Weapons
     {
+        MISSED,
         CLUB,
         SPEAR,
         SWORD
     };
     Hero(const std::string n) : Character(n) {}
     void attack(Character&);
-    void defend();
+    void defend(Character&);
     std::string getWeapon(Weapons);
+    std::string getDefense(Defenses, Character&);
 };
 
 #endif /* defined(__monster__hero__) */
