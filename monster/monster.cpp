@@ -50,6 +50,7 @@ std::string Monster::getDefense(Defenses currentDefense, Character& hero)
 {
     switch (currentDefense) {
         case Defenses::FAILED:
+            changeLifeValue(5);
             return " was unable to defend itself";
             break;
         case Defenses::BLOCK:
