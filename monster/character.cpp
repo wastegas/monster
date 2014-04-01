@@ -8,12 +8,12 @@
 
 #include "character.h"
 
-std::string Character::getCharacterName()
+std::string Character::getCharacterName() const
 {
     return characterName;
 }
 
-int Character::getCharacterLife()
+int Character::getCharacterLife() const
 {
     return characterLife;
 }

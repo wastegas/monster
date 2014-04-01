@@ -31,8 +31,8 @@ public:
 
     Character(const std::string &n)
     : characterName(n) { characterLife = 100;}
-    std::string getCharacterName();
-    int getCharacterLife();
+    std::string getCharacterName() const;
+    int getCharacterLife() const;
     void changeLifeValue(int);
     virtual void attack(Character&) {}
     virtual void defend(Character&) {}
