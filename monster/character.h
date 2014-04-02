@@ -16,7 +16,7 @@ class Character
 {
 private:
 
-    std::string characterName;
+    const std::string characterName;
     int characterLife;
 
 public:
