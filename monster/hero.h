@@ -25,7 +25,7 @@ public:
     Hero(const std::string n) : Character(n) {}
     void attack(Character&);
     void defend(Character&);
-    std::string getWeapon(Weapons);
+    std::string getWeapon(Weapons) const;
     std::string getDefense(Defenses, Character&);
 };
 

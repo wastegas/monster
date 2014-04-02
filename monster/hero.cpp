@@ -29,7 +29,7 @@ void Hero::defend(Character& monster)
     std::cout << getCharacterName() << ":" << getCharacterLife() << getDefense(currentDefense, monster) << std::endl;
 }
 
-std::string Hero::getWeapon(Weapons currentWeapon)
+std::string Hero::getWeapon(Weapons currentWeapon) const
 {
     switch (currentWeapon) {
         case Weapons::MISSED:
