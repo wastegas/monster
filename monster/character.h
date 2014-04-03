@@ -36,6 +36,7 @@ public:
     void changeLifeValue(int);
     virtual void attack(Character&) {}
     virtual void defend(Character&) {}
+    std::string getDefense(Defenses, Character&);
 };
 
 #endif /* defined(__monster__character__) */

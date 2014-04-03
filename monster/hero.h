@@ -26,7 +26,6 @@ public:
     void attack(Character&);
     void defend(Character&);
     std::string getWeapon(Weapons) const;
-    std::string getDefense(Defenses, Character&);
 };
 
 #endif /* defined(__monster__hero__) */

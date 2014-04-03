@@ -45,22 +45,3 @@ std::string Hero::getWeapon(Weapons currentWeapon) const
             return " attacking with a Club";
     }
 }
-
-std::string Hero::getDefense(Defenses currentDefense, Character& monster)
-{
-    switch (currentDefense) {
-        case Defenses::FAILED:
-            changeLifeValue(5);
-            return " was unable to defend itself";
-            break;
-        case Defenses::BLOCK:
-            return " was able to block and heal";
-        case Defenses::SHIELD:
-            return " was able to use shield and heal";
-            break;
-        case Defenses::HITBACK:
-            return " was able to hit back";
-            monster.changeLifeValue(currentDefense);
-            break;
-    }
-}
