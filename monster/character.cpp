@@ -7,6 +7,7 @@
 //
 
 #include "character.h"
+#include <random>
 
 std::string Character::getCharacterName() const
 {
@@ -24,6 +25,17 @@ void Character::changeLifeValue(int hit)
     if (characterLife > 100)    // fully healed
         characterLife = 100;
 }
+
+void Character::defend(Character& c)
+{
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> dis(0, HITBACK);
+    Defenses currentDefense = static_cast<Defenses>(dis(gen));
+    changeLifeValue(currentDefense * (-1));
+    std::cout << getCharacterName() << ":" << getCharacterLife() << getDefense(currentDefense, c) << std::endl;
+}
+
 
 std::string Character::getDefense(Defenses currentDefense, Character& c)
 {

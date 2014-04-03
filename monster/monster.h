@@ -26,7 +26,6 @@ public:
     
     Monster(const std::string n) : Character(n) {}
     void attack(Character&);
-    void defend(Character&);
     std::string getWeapon(Weapons) const;
 };
 

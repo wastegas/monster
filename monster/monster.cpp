@@ -19,16 +19,6 @@ void Monster::attack(Character& hero)
     std::cout << getCharacterName() << ":" << getCharacterLife() <<  getWeapon(currentWeapon)<< std::endl;
 }
 
-void Monster::defend(Character& hero)
-{
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_int_distribution<> dis(0, HITBACK);
-    Defenses currentDefense = static_cast<Defenses>(dis(gen));
-    changeLifeValue(currentDefense * (-1));
-    std::cout << getCharacterName() << ":" << getCharacterLife() << getDefense(currentDefense, hero) << std::endl;
-}
-
 std::string Monster::getWeapon(Weapons currentWeapon) const
 {
     switch (currentWeapon) {
