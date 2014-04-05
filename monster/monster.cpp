@@ -7,14 +7,10 @@
 //
 
 #include "monster.h"
-#include <random>
 
 void Monster::attack(Character& hero)
 {
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_int_distribution<> dis(0, FIRE);
-    Weapons currentWeapon = static_cast<Weapons>(dis(gen));
+    Weapons currentWeapon = (Weapons)randomInt(FIRE);
     hero.changeLifeValue(currentWeapon);
     std::cout << getCharacterName() << ":" << getCharacterLife() <<  getWeapon(currentWeapon)<< std::endl;
 }
