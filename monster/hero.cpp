@@ -7,8 +7,6 @@
 //
 
 #include "hero.h"
-#include "randomint.h"
-#include <random>
 
 void Hero::attack(Character& monster)
 {
