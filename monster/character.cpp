@@ -26,6 +26,15 @@ void Character::changeLifeValue(int hit)
         characterLife = 100;
 }
 
+int Character::randomInt(const int& i)
+{
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> dis(0, i);
+    return dis(gen);
+}
+
+
 void Character::defend(Character& c)
 {
     std::random_device rd;

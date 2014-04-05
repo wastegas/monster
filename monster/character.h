@@ -35,6 +35,7 @@ public:
     int getCharacterLife() const;
     void changeLifeValue(int);
     virtual void attack(Character&) {}
+    int randomInt(const int&);
     void defend(Character&);
     std::string getDefense(Defenses, Character&);
 };
