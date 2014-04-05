@@ -37,10 +37,7 @@ int Character::randomInt(const int& i)
 
 void Character::defend(Character& c)
 {
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_int_distribution<> dis(0, HITBACK);
-    Defenses currentDefense = static_cast<Defenses>(dis(gen));
+    Defenses currentDefense = (Defenses)randomInt(HITBACK);
     changeLifeValue(currentDefense * (-1));
     std::cout << getCharacterName() << ":" << getCharacterLife() << getDefense(currentDefense, c) << std::endl;
 }
