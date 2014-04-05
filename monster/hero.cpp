@@ -7,14 +7,12 @@
 //
 
 #include "hero.h"
+#include "randomint.h"
 #include <random>
 
 void Hero::attack(Character& monster)
 {
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_int_distribution<> dis(0, SWORD);
-    Weapons currentWeapon = static_cast<Weapons>(dis(gen));
+    Weapons currentWeapon = (Weapons)randomInt(SWORD);
     monster.changeLifeValue(currentWeapon);
     std::cout << getCharacterName() << ":" << getCharacterLife() <<  getWeapon(currentWeapon) << std::endl;
 }
