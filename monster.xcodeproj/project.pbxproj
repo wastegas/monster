@@ -37,6 +37,7 @@
 		EA3906E718E78DF20039A097 /* monster.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = monster.h; sourceTree = "<group>"; };
 		EA3906E918E7B2020039A097 /* hero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hero.cpp; sourceTree = "<group>"; };
 		EA3906EA18E7B2020039A097 /* hero.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = hero.h; sourceTree = "<group>"; };
+		EA3906EC18EFF3C10039A097 /* randomint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = randomint.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 				EA3906DC18E770670039A097 /* monster.1 */,
 				EA3906E318E770880039A097 /* character.cpp */,
 				EA3906E418E770880039A097 /* character.h */,
+				EA3906EC18EFF3C10039A097 /* randomint.h */,
 				EA3906E618E78DF20039A097 /* monster.cpp */,
 				EA3906E718E78DF20039A097 /* monster.h */,
 				EA3906E918E7B2020039A097 /* hero.cpp */,
