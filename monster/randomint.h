@@ -15,7 +15,8 @@ int randomInt(const int& i)
 {
     std::random_device rd;
     std::mt19937 gen(rd());
-    return std::uniform_int_distribution<> dis(0, i);
+    std::uniform_int_distribution<> dis(0, i);
+    return dis(gen);
 }
 
 #endif
