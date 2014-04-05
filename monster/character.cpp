@@ -19,7 +19,7 @@ int Character::getCharacterLife() const
     return characterLife;
 }
 
-void Character::changeLifeValue(int hit)
+void Character::changeLifeValue(const int& hit)
 {
     characterLife -= hit;
     if (characterLife > 100)    // fully healed

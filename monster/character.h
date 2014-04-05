@@ -33,7 +33,7 @@ public:
     : characterName(n) { characterLife = 100;}
     std::string getCharacterName() const;
     int getCharacterLife() const;
-    void changeLifeValue(int);
+    void changeLifeValue(const int&);
     virtual void attack(Character&) {}
     int randomInt(const int&);
     void defend(Character&);
